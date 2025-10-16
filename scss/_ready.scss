@@ -1,0 +1,49 @@
+.ready {
+    @include flex-center;
+    background-color: #E5E5E5;
+    height: 652px;
+    padding-top: 100px;
+
+    @media screen and (max-width: 768px) {
+        height: 804px;
+
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 1182px;
+        flex-direction: column;
+        padding-bottom: 33px;
+
+    }
+
+    &__text-heading {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0.1em;
+        margin-bottom: 50px;
+
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        padding-bottom: 70px;
+    }
+
+    &__text-desc {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        padding-bottom: 16px;
+        padding-right: 50px;
+        color: $color-text-main;
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}

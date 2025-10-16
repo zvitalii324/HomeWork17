@@ -1,0 +1,17 @@
+.footer {
+    @include flex-center;
+    flex-direction: column;
+    height: 250px;
+    gap: 30px;
+    background-color: $color-primaty;
+
+    &__element {
+        width: 75px;
+        height: 2px;
+        background-color: white;
+    }
+
+    &__text {
+        color: white;
+    }
+}
